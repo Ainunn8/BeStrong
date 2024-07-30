@@ -1,0 +1,367 @@
+a, body, div, form, html, img, input, label, p, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif, Arial;
+}
+
+body, html {
+    min-height: 100%;
+}
+
+body {
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, #3b97ee 20%, #6cdaeb69 80%);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    overflow: visible;
+    z-index: -1;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: -50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.block {
+    width: 250px;
+    height: 100px;
+    position: relative;
+}
+
+.blue {
+    background: linear-gradient(100deg, rgba(1, 102, 200, 0.9) 0%, rgba(0, 151, 201, 0.5) 100%);
+    width: 100%;
+    max-width: 100%;
+}
+
+.yellow {
+    background-color: rgba(254, 211, 0, 1);
+    margin-left: 20%;
+    border-radius: 100px 0 100px 0px;
+    height: 99.9%;
+}
+
+.circle1,
+.circle2 {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle1 {
+    top: 200%;
+    right: 10%;
+}
+
+.circle2 {
+    top: 520%;
+    right: 72%;
+}
+
+.login-form {
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    min-width: 100%;
+    margin: auto;
+}
+
+.login-header {
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+h5, .signup-link {
+    text-align: center;
+    color: #5e5e5e;
+}
+
+h2 {
+    text-align: center;
+    color: #0073cc;
+    font-size:x-large !important;
+}
+
+.logo {
+    width: 125%;
+}
+
+a {
+    color: #486173;
+    margin-top: -25px;
+    text-align: right;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+.main {
+    min-height: calc(100vh - 90px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ie-fixMinHeight {
+    display: flex;
+}
+
+.ico {
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    margin-left: 14px;
+    color: #5e5e5e;
+}
+
+.lite * {
+    fill: #444;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.wrap {
+    margin: auto;
+    padding: 40px;
+    transition: width .3s ease-in-out;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 575px) {
+    .wrap {
+        width: 100%;
+    }
+}
+
+form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.info {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    display: none;
+}
+
+input {
+    outline: 0;
+    appearance: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type=password], input[type=text] {
+    width: 100%;
+    border: 1px solid background-color: rgba(255, 255, 255, 0.3);
+    height: 44px;
+    padding: 3px 20px 3px 40px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: box-shadow .3s ease-in-out;
+}
+
+input[type=password]:focus, input[type=text]:focus {
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.2);
+}
+
+input, label {
+    vertical-align: middle;
+    white-space: normal;
+    background: 0 0;
+    line-height: 1;
+    color: #5e5e5e;
+}
+
+label {
+    position: relative;
+    display: block;
+}
+
+.bt {
+    opacity: 0.4;
+    text-align: center;
+    color: white;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #5e5e5e;
+    z-index: 1;
+}
+
+.password-toggle-icon i {
+    font-size: 18px;
+    color: #5e5e5e;
+    transition: color 0.3s ease-in-out;
+}
+
+.password-toggle-icon i:hover {
+    color: #000;
+}
+
+.forgot-password {
+    display: block;
+    color: #fb6d7f;
+    text-decoration: none;
+    font-size: 0.2em;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #1C92FC;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: black;
+}
+
+.signup-link a {
+    color: #009000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table td {
+    color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 4px 10px 0;
+}
+
+table td:first-child {
+    font-weight: 700;
+}
+
+.lite {
+    background: #fff;
+}
+
+.lite input[type=password], .lite input[type=text] {
+    border: 1px solid #c3c3c3;
+}
+
+.lite .info, .lite h1, .lite table td {
+    color: #444;
+}
+
+.lite input[type=password]:focus, .lite input[type=text]:focus {
+    box-shadow: 0 0 5px 0 rgba(62, 77, 89, .2);
+}
+
+.dark {
+    background: #343434;
+}
+
+.dark input[type=submit] {
+    background: #dc3a41;
+}
+
+.dark input[type=submit]:focus, .dark input[type=submit]:hover {
+    background: #b92f35;
+}
+
+.dark input[type=password], .dark input[type=text] {
+    background-color: #fff;
+}
+
+.dark a {
+    color: #dc3a41;
+}
+
+.dark table td {
+    border-bottom: 1px solid #505050;
+}
+
+.info.alert {
+    color: #da3d41;
+}
+
+@media (min-width: 576px) {
+    .wrap {
+        width:auto;
+        margin-top: -50px;
+    }
+}
